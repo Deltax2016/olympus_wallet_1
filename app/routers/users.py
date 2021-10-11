@@ -1,6 +1,6 @@
-from app.schemas import users
-from app.utils import users as users_utils
-from app.utils.dependencies import get_current_user
+from schemas import users
+from utils import users as users_utils
+from utils.dependencies import get_current_user
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
 
