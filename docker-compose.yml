@@ -9,7 +9,7 @@ services:
       - db
     environment:
       DB_USER: root
-      DB_HOST: db
+      DB_HOST: localhost
       DB_PASSWORD: root
     ports:
       - "8000:8000"

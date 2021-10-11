@@ -2,8 +2,8 @@ from os import environ
 
 import databases
 
-DB_USER = environ.get("DB_USER", "user")
-DB_PASSWORD = environ.get("DB_PASSWORD", "password")
+DB_USER = environ.get("DB_USER", "root")
+DB_PASSWORD = environ.get("DB_PASSWORD", "root")
 DB_HOST = environ.get("DB_HOST", "localhost")
 
 TESTING = environ.get("TESTING")

@@ -10,7 +10,7 @@ from alembic import context
 # add current path to PYTHONPATH, otherwise app module will not be found when alembic executing
 sys.path.append(os.getcwd())
 
-from app.models import database, posts, users
+from app.models import database, users
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -30,7 +30,7 @@ fileConfig(config.config_file_name)
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-target_metadata = [users.metadata, posts.metadata]
+target_metadata = [users.metadata]
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
