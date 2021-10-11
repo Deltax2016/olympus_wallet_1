@@ -6,11 +6,11 @@ DB_USER = environ.get("DB_USER", "root")
 DB_PASSWORD = environ.get("DB_PASSWORD", "root")
 DB_HOST = environ.get("DB_HOST", "localhost")
 
-TESTING = environ.get("TESTING")
+TESTING = environ.get("TESTING",False)
 
 if TESTING:
     # Use separate DB for tests
-    DB_NAME = "olympus_db_test"
+    DB_NAME = "olympus_db"
     TEST_SQLALCHEMY_DATABASE_URL = (
         f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:5432/{DB_NAME}"
     )
